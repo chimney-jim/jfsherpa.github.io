@@ -1,6 +1,6 @@
 var app = angular.module('mySite', ['ui.router']);
 
-app.config(function($locationProvider) {
+app.config(function($locationProvider, $stateProvider) {
   $locationProvider.html5Mode(true);
 
   $stateProvider
