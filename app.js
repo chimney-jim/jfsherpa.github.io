@@ -4,9 +4,9 @@ app.config(function($locationProvider, $stateProvider) {
   $locationProvider.html5Mode(true);
 
   $stateProvider
-    .state('home', {
+    .state('stuff', {
       url: "/",
-      // templateUrl: "partials/home.html",
+      templateUrl: "partials/home.html",
       controller: 'HomeController'
     });
 });
