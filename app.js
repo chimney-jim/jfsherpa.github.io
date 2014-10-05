@@ -6,8 +6,8 @@ app.config(function($locationProvider, $stateProvider) {
   $stateProvider
     .state('home', {
       url: "/",
-      templateUrl: "partials/home.html",
-      // controller: 'HomeController'
+      // templateUrl: "partials/home.html",
+      controller: 'HomeController'
     });
 });
 
