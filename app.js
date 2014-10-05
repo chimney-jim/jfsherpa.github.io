@@ -1,11 +1,10 @@
-var app = angular.module('mySite', ['ui.router', 'mgcrea.ngStrap']);
+var app = angular.module('mySite', ['ui.router']);
 
-app.config(function($locationProvider, $stateProvider) {
+app.config(function($locationProvider, $routeProvider) {
   $locationProvider.html5Mode(true);
 
-  $stateProvider
-    .state('stuff', {
-      url: "/",
+  $routeProvider.
+    when('/', {
       templateUrl: "partials/home.html",
       controller: 'HomeController'
     });
