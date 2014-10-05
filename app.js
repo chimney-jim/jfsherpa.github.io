@@ -7,7 +7,7 @@ app.config(function($locationProvider, $stateProvider) {
     .state('home', {
       url: "/",
       templateUrl: "partials/home.html",
-      controller: 'HomeController'
+      // controller: 'HomeController'
     });
 });
 
